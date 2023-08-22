@@ -1,0 +1,13 @@
+.myst{
+    width: 100% !important;
+    display: flex;
+    position: absolute;
+    /* overflow: scroll; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+  /* overflow-y: auto;    */
+}
+
+.vdocard{
+    margin: 8rem 0;
+}
