@@ -65,23 +65,23 @@ const Head = () => {
           <li>
             <IoLogoYoutube />
             <span>Youtube</span>
-          </li> 
+          </li>
         </div>
       </div>
 
       <div className="col-span-10 px-10 search-bar">
-          <input
-            className=" px-5 w-1/2 border-2 border-gray-500 p-2 rounded-l-full"
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            onFocus={() => setShowSuggestions(true)}
-            onBlur={() => setShowSuggestions(false)}
-          />
+        <input
+          className=" px-5 w-1/2 border-2 border-gray-500 p-2 rounded-l-full"
+          type="text"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          // onFocus={() => setShowSuggestions(true)}
+          // onBlur={() => setShowSuggestions(false)}
+        />
 
-          <button className="border-2 border-gray-500 px-5 py-2 rounded-r-full bg-gray-100 ">
-            🔍
-          </button>
+        <button className="border-2 border-gray-500 px-5 py-2 rounded-r-full bg-gray-100 ">
+          🔍
+        </button>
 
         {showSuggestions && (
           <div className="fixed bg-white py-2 px-2 w-[31rem] shadow-lg rounded-lg border border-gray-100">
@@ -94,6 +94,10 @@ const Head = () => {
             </ul>
           </div>
         )}
+      </div>
+
+      <div>
+    
       </div>
 
       <div
